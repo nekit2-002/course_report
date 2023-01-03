@@ -1,0 +1,23 @@
+\include{preamble}
+
+\newtotcounter{citenum} %From the package documentation
+\def\oldbibitem{}
+\let\oldbibitem=\bibitem
+\def\bibitem{\stepcounter{citenum}\oldbibitem}
+
+\begin{document}
+\includepdf[pages={1}]
+{title.pdf}
+
+\tableofcontents
+\newpage
+
+\section{Введение}
+Я привторяюсь что что-то пишу.
+\begin{thebibliography}{}
+
+
+\end{thebibliography}
+
+
+\end{document}
